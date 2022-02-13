@@ -1,0 +1,242 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+.boton {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #8cbc00;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+.boton:hover {
+  background-color: #769c02;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Titulo, Navegacion e Imagen */
+
+.title-h1 {
+  margin-top: 5rem;
+  text-align: center;
+  color: #000;
+}
+.span-title {
+  color: #037bc0;
+}
+.container-nav {
+  border-top: 1px solid #e1e1e1;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.boton-nav:hover {
+  font-size: 2rem;
+  color: #000ff0;
+}
+.nav-principal {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+.nav-principal a {
+  color: #000;
+}
+.hero {
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 55rem;
+}
+
+/* Categorias */
+
+.container-title h2 {
+  text-align: center;
+  margin: 5rem 0 2rem 0;
+}
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.categoria a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  color: #000;
+}
+.categoria a:hover {
+  background-color: #037bc0;
+  color: #fff;
+  font-size: 3rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Sobre Nosotros e Imagen */
+
+.sobre-nosotros {
+  margin-top: 4rem;
+}
+
+.sobre-nosotros-flexbox {
+  display: flex;
+  justify-content: end;
+}
+.texto-sobre-nosotros {
+  flex-basis: 50%;
+  padding-left: 7rem;
+  color: #fff;
+}
+
+.sobre-nosotros {
+  background-image: linear-gradient(to right, transparent 50%, #035bc0 50%),
+    url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%, 120rem;
+  padding: 10rem 0;
+}
+
+/* Nuestros Productos */
+
+.container-principal {
+  padding-top: 5rem;
+}
+.producto {
+  background-color: #037bc0;
+}
+.texto-producto h3 {
+  margin: 0;
+}
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
+}
+.texto-producto {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+.precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+/* Aplicando Grid a los Productos */
+
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.producto:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+  height: 43rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.producto:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.producto:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.producto:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+/* Pie de Pagina */
+
+.site-footer {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top: 1px solid #e1e1e1;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.site-footer a {
+  display: block;
+  color: #000000;
+}
+.site-footer a:hover {
+  color: #000ff0;
+  font-size: 2.4rem;
+}
+.site-footer h3 {
+  margin: 0.5rem;
+}
+.derechos {
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
