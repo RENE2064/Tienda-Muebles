@@ -39,6 +39,9 @@ a {
 .text-center {
   text-align: center;
 }
+.max-width-300 {
+  max-width: 30rem;
+}
 .boton {
   display: block;
   color: #fff;
@@ -47,6 +50,7 @@ a {
   background-color: #8cbc00;
   padding: 1rem;
   transition: background-color 0.3s ease-out;
+  text-align: center;
 }
 .boton:hover {
   background-color: #769c02;
@@ -254,4 +258,68 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Pagina Blog */
+
+.container-blog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+}
+
+.entrada {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+  border: none;
+  margin: auto;
+  padding: 0;
+}
+
+.entrada-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entrada-meta p {
+  font-weight: 700;
+}
+.entrada-meta span {
+  color: #037bc0;
+}
+
+/* Entrada Blog */
+
+.container-entrada-blog {
+  width: 60rem;
+  margin-right: auto;
+}
+
+/* Pagina Galeria */
+
+.galeria {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.galeria img {
+  height: 30rem;
+  width: 40rem;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+  border-radius: 1rem;
+  border: 1px solid #e1e1e1;
+}
+
+.galeria img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
 }
